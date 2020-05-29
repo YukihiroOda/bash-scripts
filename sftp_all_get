@@ -2,6 +2,7 @@
 
 sftp Remote <<END
 get -r *
+get -r .*
 exit
 END
 exit 0
