@@ -1,7 +1,7 @@
 #!/bin/sh
 
 [ -z $1 ] && {
-    echo "Please give Hostname"
+    echo "ERROR!! There is no Hostname."
     exit 1
 }
 sftp $1 <<END
