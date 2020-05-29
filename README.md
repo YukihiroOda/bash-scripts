@@ -17,6 +17,11 @@ then
 '/home/Username'
 ```
 
-## sftp_allgete
+## sftp_all_get
 
-*sftp_allgete* is to get all files in a remote machine by sftp.
+*sftp_all_get* is to get all files in a remote machine by sftp.
+For example, 
+```
+~$ sftp_all_get hoge.com
+```
+then you "get" all files in the home directory of hoge.com. 
