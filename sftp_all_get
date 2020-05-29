@@ -1,0 +1,7 @@
+#!/bin/sh
+
+sftp Remote <<END
+get -r *
+exit
+END
+exit 0

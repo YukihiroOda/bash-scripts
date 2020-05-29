@@ -16,3 +16,7 @@ then
 '$HOME'
 '/home/Username'
 ```
+
+## sftp_allgete
+
+*sftp_allgete* is to get all files in a remote machine by sftp.
