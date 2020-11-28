@@ -24,4 +24,14 @@ For example,
 ```
 ~$ sftp_all_get hoge.com
 ```
-then you "get" all files in the home directory of hoge.com. 
+then you "get" all files in the home directory of hoge.com.
+
+## tex2svg
+
+*tex2svg* make the svg file from a tex file.
+For example, 
+```
+~$ tex2svg hoge.tex
+```
+then you get hoge.svg.
+This script depends on *lualatex* and *pdf2svg*.
