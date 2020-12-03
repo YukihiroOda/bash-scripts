@@ -1,6 +1,6 @@
 #!/bin/bash
 
 Filename="`basename ${1:?} .tex`"
-lualatex "$Filename"
+lualatex -halt-on-error "$Filename"
 pdf2svg "$Filename".pdf "$Filename".svg
 rm -f *.aux *.nav *.out *.snm *.toc *~ *.dvi *.fls *.fdb_latexmk *.synctex.gz *.blg *.pdf
