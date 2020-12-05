@@ -1,6 +1,14 @@
 #!/bin/bash
 
-Filename="`basename ${1:?} .tex`"
-lualatex -halt-on-error "$Filename"
-pdf2svg "$Filename".pdf "$Filename".svg
-rm -f *.aux *.nav *.out *.snm *.toc *~ *.dvi *.fls *.fdb_latexmk *.synctex.gz *.blg *.pdf
+for arg in "$@"
+do
+    echo "$arg"
+    case $arg in
+	*.tex)
+	    Filename="`basename $arg .tex`"
+	    lualatex -halt-on-error "$Filename"
+	    pdf2svg "$Filename".pdf "$Filename".svg
+	    rm -f *.aux *.nav *.out *.snm *.toc *~ *.dvi *.fls *.fdb_latexmk *.synctex.gz *.blg *.pdf
+	    ;;
+    esac
+done
